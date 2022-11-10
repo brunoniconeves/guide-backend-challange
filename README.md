@@ -70,19 +70,19 @@ Abra o navegador e acesse o seguinte URL: https://localhost:5000/swagger/index.h
 
 Serão exibidos os endpoints disponibilizados na API.
 
-Caso tenha restaurado a base com dados, verá que ela já possui dados das seguintes empresas 
+Caso tenha restaurado a base com dados, verá que ela já possui dados dos seguintes ativos 
 
-1	WEGE3.SA	WEGE	BRL	https://bastter-storage.b-cdn.net/acao/WEGE.gif	ON
-2	MDIA3.SA	MDIA	BRL	https://bastter-storage.b-cdn.net/acao/MDIA.gif	ON
-3	RADL3.SA	RADL	BRL	https://bastter-storage.b-cdn.net/acao/RADL.gif	ON
-4	BBDC4.SA	BBDC	BRL	https://bastter-storage.b-cdn.net/acao/BBDC.gif	PN
-5	HYPE3.SA	HYPE	BRL	https://bastter-storage.b-cdn.net/acao/HYPE.gif	ON
-6	PETR4.SA	PETR	BRL	https://bastter-storage.b-cdn.net/acao/PETR.gif	PN
-7	VALE3.SA	VALE	BRL	https://bastter-storage.b-cdn.net/acao/VALE.gif	ON
-8	FLRY3.SA	FLRY	BRL	https://bastter-storage.b-cdn.net/acao/FLRY.gif	ON
-9	PETR3.SA	PETR	BRL	https://bastter-storage.b-cdn.net/acao/PETR.gif	ON
-13	SAPR11.SA	SAPR	BRL	https://bastter-storage.b-cdn.net/acao/SAPR.gif	UNIT
-14	ITUB4.SA	ITUB	BRL	https://bastter-storage.b-cdn.net/acao/ITUB.gif	PN
+WEGE3
+MDIA3
+RADL3
+BBDC4
+HYPE3
+PETR4
+VALE3
+FLRY3
+PETR3
+SAPR11
+ITUB4
 
 
 # Endpoint [POST] /guide/company/{symbol}/updateHistory
