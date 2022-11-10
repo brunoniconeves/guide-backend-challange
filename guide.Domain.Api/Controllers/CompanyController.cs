@@ -55,9 +55,16 @@ public class CompanyController : ControllerBase
   /// a variação para o último dia e para o início do período de 30 dias.
   /// </returns>
   [HttpGet("priceHistory")]
-  public IEnumerable<CompanyPriceHistory> getCompanyPriceHistory(string symbol)
+  public ObjectResult getCompanyPriceHistory(string symbol)
   {
-    return _companyRepository.getCompanyPriceHistory(symbol);
+    IEnumerable<CompanyPriceHistory> result = _companyRepository.getCompanyPriceHistory(symbol);
+
+    if (result.Count() == 0)
+    {
+      return NotFound("Este ativo não possui histórico, verifique se o código está correto.");
+    }
+
+    return Ok(result);
   }
 
   /// <summary>
