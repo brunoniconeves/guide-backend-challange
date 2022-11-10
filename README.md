@@ -16,7 +16,7 @@ Armazena as informações básicas da empresa
 - type indica se uma ação é ON, PN ou UNIT (tratamento a partir do symbol da Yahoo Finance)
 
 ## Tabela CompanyPriceHistory
-Armazena o histório de cotações de cada ativo
+Armazena o histório de cotações de cada ativoCancel changes
 - id
 - companyId é chave estrangeira para a Company
 - date é a data da cotação de abertura
@@ -112,15 +112,46 @@ Consulta simples a informações de um ativo.
 Essas informaões serão usadas para fazer o front no Flutter. Tomei a liberdade de usar imagens da Bastter.com, trabalhei lá e sei que essas imagens estão públicas para uso não comercial.
 
 # Endpoint [GET] /guide/company/{symbol}/priceHistory
-Consulta a lista de cotações do ativo nos últimos 30 pregões.
+Consulta a lista de cotações do ativo nos últimos 30 pregões. Cada objeto representa um dia com a respectiva cotação e os dados de variação já calculados.
+
+```
+[
+  {
+    "id": 911,
+    "companyId": 9,
+    "date": "2022-11-09T00:00:00",
+    "openPrice": 30.520000457763672,
+    "d1VariationPercentage": 0.46,
+    "firstPriceVariationPercentage": -6.95
+  },
+  {
+    "id": 910,
+    "companyId": 9,
+    "date": "2022-11-08T00:00:00",
+    "openPrice": 30.3799991607666,
+    "d1VariationPercentage": -3.22,
+    "firstPriceVariationPercentage": -7.38
+  },
+  ...
+]
+```
 
 Experimento buscar algum ativo que não está na base, e depois incluir ele com o /updateHistory e tente novamente, os resultados serão diferentes.
 E podem ser usados para simular as diferentes situções na solução de frontend.
 
 # Endpoint [GET] /guide/company/{symbol}/lastPrice
-Consulta a última cotação de abertura do ativo. Já traz a variação d-1 e para a primeira cotação do range de 30 progões.
+Consulta a última cotação de abertura do ativo. Já traz a variação d-1 e para a primeira cotação do range de 30 progões. O objeto representa o dia da última cotação na base com a respectiva cotação e os dados de variação já calculados.
 
-
+```
+{
+  "id": 911,
+  "companyId": 9,
+  "date": "2022-11-09T00:00:00",
+  "openPrice": 30.520000457763672,
+  "d1VariationPercentage": 0.46,
+  "firstPriceVariationPercentage": -6.95
+}
+```
 
 
 
