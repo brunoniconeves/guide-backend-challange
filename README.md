@@ -73,16 +73,11 @@ Serão exibidos os endpoints disponibilizados na API.
 Caso tenha restaurado a base com dados, verá que ela já possui dados dos seguintes ativos 
 
 WEGE3
-MDIA3
-RADL3
-BBDC4
-HYPE3
 PETR4
-VALE3
-FLRY3
 PETR3
-SAPR11
 ITUB4
+FLRY3
+MDIA3
 
 
 # Endpoint [POST] /guide/company/{symbol}/updateHistory
