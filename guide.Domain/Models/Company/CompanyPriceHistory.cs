@@ -6,7 +6,7 @@ namespace guide.Domain.Models.Company
   {
     public int id { get; set; }
     public int companyId { get; set; }
-    public DateTime date { get; set; }
+    public int date { get; set; }
     public double openPrice { get; set; }
     public double d1VariationPercentage { get; set; }
     public double firstPriceVariationPercentage { get; set; }
@@ -14,7 +14,7 @@ namespace guide.Domain.Models.Company
     public CompanyPriceHistory(
       int id, 
       int companyId,
-      DateTime date,
+      int date,
       double openPrice,
       double d1VariationPercentage,
       double firstPriceVariationPercentage

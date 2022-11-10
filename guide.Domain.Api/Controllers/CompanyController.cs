@@ -161,7 +161,7 @@ public class CompanyController : ControllerBase
 
         // extension UnixTimestampToDateTime was created to handle
         // the Unix Timestamp format from Yahoo Finance
-        DateTime _date = result["timestamp"][i].Value<double>().UnixTimestampToDateTime();
+        int _date = result["timestamp"][i].Value<int>();
         
         double _openPrice = result["indicators"]["quote"][0]["open"][i].Value<double>();
 
