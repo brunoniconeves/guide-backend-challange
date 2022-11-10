@@ -6,17 +6,19 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using guide.Domain.Models.Company;
+using Microsoft.Extensions.Configuration;
 
 namespace guide.Domain.Infra.Repositories
 {
   public class CompanyRepository : ICompanyRepository
   {
-    private readonly IDbConnection _conn;
-    private string _connectionString = "Data Source=DESKTOP-RMTCGS4\\MSSQLSERVER02;Initial Catalog=GuideChallange;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=true;";
-
-    public CompanyRepository()
+    private readonly IDbConnection _conn;   
+    private readonly IConfiguration _config;
+   
+    public CompanyRepository(IConfiguration config)
     {
-      _conn = new SqlConnection(_connectionString);
+      _config = config;
+      _conn = new SqlConnection(_config["ConnectionStrings:GuideChallange"]);      
     }
 
 

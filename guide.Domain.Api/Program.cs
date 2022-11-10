@@ -1,7 +1,10 @@
 using guide.Domain.Infra.Repositories;
 using guide.Domain.Repositories;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration.AddJsonFile("config.json");
 
 // Add services to the container.
 builder.Services.AddCors(options => options.AddPolicy("AllowSpecificOrigin",

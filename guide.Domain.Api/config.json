@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "GuideChallange": "Data Source=DESKTOP-RMTCGS4\\MSSQLSERVER02;Initial Catalog=GuideChallange;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=true;"
+  }
+}
