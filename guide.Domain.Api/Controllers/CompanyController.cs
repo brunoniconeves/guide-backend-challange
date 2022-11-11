@@ -202,6 +202,7 @@ public class CompanyController : ControllerBase
           new CompanyPriceHistory(
             0,
             companyInfo.id,
+            "",
             _date,
             _openPrice,   
             _d1VariationPercentage,

@@ -6,6 +6,7 @@ namespace guide.Domain.Models.Company
   {
     public int id { get; set; }
     public int companyId { get; set; }
+    public string companyLogo { get; set; }
     public int date { get; set; }
     public double openPrice { get; set; }
     public double d1VariationPercentage { get; set; }
@@ -14,6 +15,7 @@ namespace guide.Domain.Models.Company
     public CompanyPriceHistory(
       int id, 
       int companyId,
+      string companyLogo, 
       int date,
       double openPrice,
       double d1VariationPercentage,
@@ -21,6 +23,7 @@ namespace guide.Domain.Models.Company
     ) {
       this.id = id;
       this.companyId = companyId;
+      this.companyLogo = companyLogo;
       this.date = date;
       this.openPrice = openPrice;
       this.d1VariationPercentage = d1VariationPercentage;

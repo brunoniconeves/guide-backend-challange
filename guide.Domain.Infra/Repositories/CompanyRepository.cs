@@ -51,10 +51,11 @@ namespace guide.Domain.Infra.Repositories
       string query = @"SELECT
                         h.id,
                         companyId,
+                        c.companyLogo,
                         date,
                         openPrice,
                         d1VariationPercentage,
-                        firstPriceVariationPercentage
+                        firstPriceVariationPercentage                       
                       FROM 	CompanyPriceHistory h
                       INNER JOIN Company c ON h.companyId = c.id
                       WHERE	c.symbol like @symbol
