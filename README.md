@@ -156,3 +156,22 @@ Consulta a última cotação de abertura do ativo. Já traz a variação d-1 e p
 
 
 
+
+# Informações Adicionais
+
+Não foi possível, por restrição de tempo, implementar a tela de código nativo. Optei por mostrar o melhor possível meus conhecimentos em Flutter, implementando, na melhor forma possível:
+
+- uso de gestão de estados com GetX
+- uso de rotas nomeadas, bindings, middlaware e passagem de parâmetros com GetX
+- integração com a API por meio do DIO e injeção de dependências
+- uso de animação para fazer uma interface amigável
+- design fora da caixa utilizando curvas no header
+- implementação do gráfico na biblioteca solicitada fl_chart
+
+Infelizmente, como podem notar o tempo foi uma grande restrição, pois estou trabalhando normalmente e com muita demanda atualmente.(Tive uma entrega de um novo app mobile essa semana também).
+
+Creio ter gastado cerca de 16 horas construindo o projeto do zero. 
+
+Vejam que há um endpoint de obter informações da companhia e outro para obter somente o último preço.
+
+A ideia era ter feito uma página mais elaborada para o Ativo, com informações que buscaria de outras fontes como Bastter.com ou de outros sites com dados abertos. Porém não houve tempo. 
