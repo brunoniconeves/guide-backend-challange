@@ -179,7 +179,7 @@ A ideia era ter feito uma página mais elaborada para o Ativo, com informações
 # FEEDBACK do Challange
 Gostei do desafio, implementei coisas rotineiras e coisas que não havia implementado ainda (nunca havia usado a fl_chart, por exemplo). Também acho que esse tipo de avaliação avalia o candidato de forma mais honesta que um code challange de 30 minutos com um problema totalmente fora do dia a dia do profissional. Este desafio foi um caso real com aplicação no mundo real.
 
-Tenho uma gustão quanto ao prazo. O prazo está ok se eu estivesse desempregado, porém para quem está empregado se torna um pouco cruel.
+Tenho uma sugestão quanto ao prazo. O prazo está ok se eu estivesse desempregado, porém para quem está empregado se torna um pouco cruel.
 
 Uma terefa mais extensa como essa, acho que poderiam passar para fazer no final de semana (no mesmo prazo em horas). Seria mais ou menos o mesmo prazo, mas para o desenvolvedor que está empregado é mais factível realizar...e mais correto para concorrer com outros que podem ter mais tempo livre durante a semana.
 
